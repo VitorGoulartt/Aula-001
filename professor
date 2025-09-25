@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		
+		String somar = "+";
+		String menos = "-";
+		String multiplicar = "x";
+		System.out.println("Que tipo de equação voce deseja quer fazer?  " + Somar + menos + multiplicar);
+		String es = sc.next();
+		System.out.print("digite o ano atual: ");
+		int a = sc.nextInt();
+		System.out.print("digite o ano de nascimento: ");
+		int b = sc.nextInt();
+		if (es == somar )
+		{
+		    int mais = a + b;
+		    System.out.println("o numero é :" + mais ) ;
+		    sc.close();
+		}
+		
+		if (es == menos )
+		{
+		    int Menos = a - b;
+		   System.out.println("o numero é :" + Menos ) ;
+		   sc.close();
+		}
+		if (es == multiplicar)
+		{
+		    int multiplicado = a * b;
+		    System.out.println("o numero é :" + multiplicado ) ;
+		    sc.close();
+		}
+		
+		
+		
+		
+	}
+}
